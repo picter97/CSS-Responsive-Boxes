@@ -1,3 +1,43 @@
 body {
   background: peachpuff;
 }
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+}
+div > * {
+  background-color: grey;
+  text-align: center;
+}
+.a {
+  flex: 1 1 20%;
+}
+.b {
+  flex: 1 1 20%;
+}
+
+
+.b, .c, .d, .e, .f{
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.g{
+  flex: 1 1 100%;
+}
+.h{
+  flex: 1 1 20%;
+  flex-direction: column;
+
+}
+@media(min-height:800px){
+  .conatainer{
+    display: flex;
+    flex-direction: row;
+  }
+}

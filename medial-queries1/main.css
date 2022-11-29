@@ -1,3 +1,36 @@
 body {
   background: blanchedalmond;
+
+}
+.container{
+  display: flex;
+  min-height: 100vh;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.a{
+  text-align: center;
+  background-color: blue;
+  gap: 1em;
+  flex: 1 1 100%;
+}
+.b{
+  background-color: blueviolet;
+  gap: 1em;
+  flex: 5;
+}
+.c{
+  background-color: aqua;
+  gap: 1em;
+  flex: 1;
+}
+@media (min-width: 800px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    flex-direction: column;
+  }
 }
